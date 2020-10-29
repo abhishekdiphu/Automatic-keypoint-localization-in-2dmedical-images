@@ -17,12 +17,12 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 ##  Results Visualization
 The results of this implementation:
 
-## Adversarial PoseNet:
+### Adversarial PoseNet:
 <img src="testresults-1/Adversarial-1/results_116.png" width="500px"/>
 
 
 
-## Stack-hour-glass Network(supervised setup):
+### Stack-hour-glass Network(supervised setup):
 <img src="testresults-1/baseline-1/results_120.png" width="500px"/> 
 
 
