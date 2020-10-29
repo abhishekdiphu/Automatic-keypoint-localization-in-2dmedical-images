@@ -78,9 +78,7 @@ python trainmodeladversarial-pos-conf-exp24.py \
 - During training , one can see how the network is learning on batch of input samples by looking inside the folder 
 ```
 trainingImages/
-
 ```
-<img src="trainingImages/train_img_exp23-pretrained.png" width="200px"/><img src="trainingImages/train_gt_exp23-pretrained.png" width="200px"/><img src="trainingImages/train_output_exp23-pretrained.png" width="200px"/>
 
 Models are saved to `./trainmodel/` (can be changed in the --modelName).  
 
