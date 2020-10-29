@@ -18,10 +18,10 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 The results of this implementation:
 
 ### Adversarial PoseNet
-<img src="testresults-1/Adversarial-1/results_116.png" width="1000px"/>
+<img src="testresults-1/Adversarial-1/results_116.png" width="500px"/>
 
 ### Stack-hour-glass Network(supervised setup)
-<img src="testresults-1/baseline-1/results_117.png" width="1000px"/> 
+<img src="testresults-1/baseline-1/results_117.png" width="500px"/> 
 
 
 
