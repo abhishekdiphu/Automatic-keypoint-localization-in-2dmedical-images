@@ -40,7 +40,7 @@ The results of this implementation:
 - Hiwi(FH Kiel Internal package)
 - Numpy
 - Scipy-images
-```The list of dependencies can be found in the the requirements.txt file. Simply use pip install -r requirements.txt to install them.```
+- ```The list of dependencies can be found in the the requirements.txt file. Simply use pip install -r requirements.txt to install them.```
 
 
 ## Getting Started
