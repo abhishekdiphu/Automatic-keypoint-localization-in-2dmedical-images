@@ -104,7 +104,8 @@ Conditional Random Field](https://www.researchgate.net/publication/319634278_Det
 
 
 ## Reference
-- The pytorch implementation of stacked-hour-glass, https://github.com/princeton-vl/pytorch_stacked_hourglass
-- The pytorch implementation of self-adversarial pose estimation, https://github.com/roytseng-tw/adversarial-pose-pytorch
-- The torch implementation of self-adversarial pose estimationh , https://github.com/dongzhuoyao/jessiechouuu-adversarial-pose
+- The pytorch re-implementation of stacked-hour-glass, https://github.com/princeton-vl/pytorch_stacked_hourglass
+- The pytorch re-implementation of self-adversarial pose estimation, https://github.com/roytseng-tw/adversarial-pose-pytorch
+- The torch   implementation of self-adversarial pose estimation, https://github.com/dongzhuoyao/jessiechouuu-adversarial-pose
+- The pytorch re-implementation of Adversarial-Pose-Net,https://github.com/rohitrango/Adversarial-Pose-Estimation
 
