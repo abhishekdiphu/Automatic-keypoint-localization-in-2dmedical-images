@@ -9,7 +9,7 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 
 
 
-## Input images 
+## Sample input images (left) & its corresponding ground truth heatmap(right): 
 <img src="readmeimages/inputs01.png" width="500px"/>
 
 
