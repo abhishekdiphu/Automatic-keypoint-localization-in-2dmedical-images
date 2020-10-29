@@ -1,6 +1,6 @@
 
 # AdversarialPoseNet-2DMedical
-Investigation of adversarial learning for landmark localization in 2D medical images (lower extrimites)
+Yu Chen's Adversarial-PoseNet for landmark localization in 2D medical images (lower extrimites)
 
 
 Pytorch implementation of chen et al. "Adversarial PoseNet" for landmark localization on medical data.
