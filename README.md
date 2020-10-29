@@ -9,28 +9,26 @@ Pytorch implementation of chen et al. "Adversarial PoseNet" for landmark localiz
 The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, Jian Yang](https://scholar.google.com/citations?user=IWZubqUAAAAJ&hl=zh-CN) in 
 [Adversarial PoseNet: A Structure-aware Convolutional Network for Human Pose Estimation](https://arxiv.org/pdf/1705.00389). 
 
-<!--
-## Applications
-### Monet Paintings to Photos
-<img src="imgs/painting2photo.jpg" width="1000px"/>
 
-### Lanmark localization 
+
+## Lanmark localization 
 <img src="readimages/inputs01.png" width="1000px"/>
 
 
--->
 
-## Update Results
+##  Results Visualization
 The results of this implementation:
 
-- Horses -> Zebras <br>
-<img src="imgs/n02381460_510.jpg" width="200px"/> <img src="imgs/AtoB_n02381460_510.jpg" width="200px"/> <img src="imgs/n02381460_4530.jpg" width="200px"/> <img src="imgs/AtoB_n02381460_4530.jpg" width="200px"/> <img src="imgs/n02381460_4660.jpg" width="200px"/> <img src="imgs/AtoB_n02381460_4660.jpg" width="200px"/> <img src="imgs/n02381460_8980.jpg" width="200px"/> <img src="imgs/AtoB_n02381460_8980.jpg" width="200px"/>
+- Adversarial PoseNet<br>
+<img src="testresults-1/Adversarial-1/results_116.png" width="200px"/> 
+<img src="testresults-1/Adversarial-1/results_117.png" width="200px"/> 
+<img src="testresults-1/Adversarial-1/results_118.png" width="200px"/> 
 
-- Zebras -> Horses <br>
-<img src="imgs/n02391049_1760.jpg" width="200px"/> <img src="imgs/BtoA_n02391049_1760.jpg" width="200px"/> <img src="imgs/n02391049_3070.jpg" width="200px"/> <img src="imgs/BtoA_n02391049_3070.jpg" width="200px"/> <img src="imgs/n02391049_5100.jpg" width="200px"/> <img src="imgs/BtoA_n02391049_5100.jpg" width="200px"/> <img src="imgs/n02391049_7150.jpg" width="200px"/> <img src="imgs/BtoA_n02391049_7150.jpg" width="200px"/>
+- Stack-hour-glass Network(supervised setup)<br>
+<img src="testresults-1baseline-1/results_117.png" width="200px"/> 
+<img src="testresults-1baseline-1/results_118.png" width="200px"/> 
+<img src="testresults-1baseline-1/results_119.png" width="200px"/> 
 
-You can download the pretrained model from [this url](https://1drv.ms/u/s!AroAdu0uts_gj5tA93GnwyfRpvBIDA)
-and extract the rar file to `./checkpoint/`.
 
 
 ## Prerequisites
