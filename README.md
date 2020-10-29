@@ -80,7 +80,7 @@ python trainmodeladversarial-pos-conf-exp24.py \
 trainingImages/
 
 ```
-input sample<img src="trainingImages/train_img_exp23-pretrained.png.png" width="200px"/><img src="trainingImages/train_gt_exp23-pretrained.png" width="200px"/><img src="trainingImages/train_output_exp23-pretrained.png.png" width="200px"/>
+<img src="trainingImages/train_img_exp23-pretrained.png" width="200px"/><img src="trainingImages/train_gt_exp23-pretrained.png" width="200px"/><img src="trainingImages/train_output_exp23-pretrained.png" width="200px"/>
 
 Models are saved to `./trainmodel/` (can be changed in the --modelName).  
 
