@@ -23,7 +23,7 @@ The results of this implementation:
 
 
 ## Stack-hour-glass Network(supervised setup):
-<img src="testresults-1/baseline-1/results_117.png" width="500px"/> 
+<img src="testresults-1/baseline-1/results_120.png" width="500px"/> 
 
 
 
