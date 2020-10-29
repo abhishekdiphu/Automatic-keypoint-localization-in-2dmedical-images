@@ -52,35 +52,34 @@ git clone https://github.com/abhishekdiphu/AdversarialPoseNet-2DMedical.git
 cd AdversarialPoseNet-2DMedical
 ```
 
-### Train
-- Download a dataset (e.g. zebra and horse images from ImageNet):
-```bash
-bash ./download_dataset.sh horse2zebra
-```
-- Train a model:
-```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=horse2zebra
-```
-- Use tensorboard to visualize the training details:
-```read the files inside the log/ folder
-```
-
-### Test
-- Finally, test the model:
-```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=horse2zebra --phase=test --which_direction=AtoB
-```
 
 ## Training and Test Details
-To train a model,  
+To train a model, run any of the .sh file starting with "train". for example  
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ 
+trainmodelmedical-exp-22.sh 
 ```
-Models are saved to `./checkpoints/` (can be changed by passing `--checkpoint_dir=your_dir`).  
+- A bash file has following configurations, that one can change 
+```
+python trainmodeladversarial-pos-conf-exp24.py \
+--path handmedical \
+--modelName trainmodel \
+--config config.default_config \
+--batch_size 1 \
+--use_gpu \
+--lr .0002 \
+--print_every 100 \
+--train_split 0.804 \
+--loss mse \
+--optimizer_type Adam \
+--epochs 50 \
+--dataset  'medical' 
+
+```
+Models are saved to `./trainmodel/` (can be changed in the --modelName).  
 
 To test the model,
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test --which_direction=AtoB/BtoA
+test.sh
 ```
 
 ## Datasets
