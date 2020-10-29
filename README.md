@@ -19,11 +19,16 @@ The results of this implementation:
 
 ### Adversarial PoseNet:
 <img src="testresults-1/Adversarial-1/results_116.png" width="500px"/>
+<img src="testresults-1/Adversarial-1/results_117.png" width="500px"/>
 
 
 
 ### Stack-hour-glass Network(supervised setup):
 <img src="testresults-1/baseline-1/results_120.png" width="500px"/> 
+
+### localization rate of diffent setups on the test split:
+
+<img src="readmeimages/result_hist.png" width="500px"/><img src="readmeimages/result_table.png" width="500px"/>
 
 
 
@@ -56,8 +61,7 @@ bash ./download_dataset.sh horse2zebra
 CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=horse2zebra
 ```
 - Use tensorboard to visualize the training details:
-```bash
-tensorboard --logdir=./logs
+```read the files inside the log/ folder
 ```
 
 ### Test
