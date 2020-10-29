@@ -1,0 +1,14 @@
+python trainmodel-pretraining-conf-exp-27.py \
+--path handmedical \
+--modelName train-model-31/pretrained_conf_sh_glass/experient01 \
+--config config.default_config \
+--batch_size 1 \
+--use_gpu \
+--gpu_device 0 \
+--lr .00025 \
+--print_every 50 \
+--train_split 0.804 \
+--loss mse \
+--optimizer_type Adam \
+--epochs 80 \
+--dataset  'medical' 

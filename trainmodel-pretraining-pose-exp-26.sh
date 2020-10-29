@@ -1,0 +1,14 @@
+python trainmodel-pretraining-pose-exp-26.py \
+--path handmedical \
+--modelName train-model-31/pretraining_discriminator/test \
+--config config.default_config \
+--batch_size 1 \
+--use_gpu \
+--gpu_device 0 \
+--lr .002 \
+--print_every 1000000 \
+--train_split 0.8505 \
+--loss mse \
+--optimizer_type Adam \
+--epochs 70 \
+--dataset  'medical' 

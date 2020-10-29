@@ -1,0 +1,13 @@
+python trainmodelmdeicaladverse_augumentation-exp25.py \
+--path handmedical \
+--modelName train-model-16-medical-adversarial-pre-trainied-660-data-augm-run2-testing \
+--config config.default_config \
+--batch_size 1 \
+--use_gpu \
+--lr .00025 \
+--print_every 50 \
+--train_split 0.804 \
+--loss mse \
+--optimizer_type Adam \
+--epochs 60 \
+--dataset  'medical' 
