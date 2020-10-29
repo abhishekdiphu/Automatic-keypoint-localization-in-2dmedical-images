@@ -39,7 +39,7 @@ The results of this implementation:
 - OpenCV
 - Hiwi(FH Kiel Internal package)
 - Numpy
-- Scipy-images
+- scikit-image
 - ```The list of dependencies can be found in the the requirements.txt file. Simply use pip install -r requirements.txt to install them.```
 
 
