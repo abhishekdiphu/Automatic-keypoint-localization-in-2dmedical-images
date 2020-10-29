@@ -9,7 +9,7 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 
 
 
-## Lanmark localization 
+## Input images 
 <img src="readmeimages/inputs01.png" width="500px"/>
 
 
