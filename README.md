@@ -18,20 +18,22 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 The results of this implementation:
 
 ### Adversarial PoseNet
-<img src="testresults-1/Adversarial-1/results_116.png" width="1000px"/><img src="testresults-1/Adversarial-1/results_117.png" width="1000px"/> 
+<img src="testresults-1/Adversarial-1/results_116.png" width="1000px"/>
 
 ### Stack-hour-glass Network(supervised setup)
 <img src="testresults-1/baseline-1/results_117.png" width="1000px"/> 
-<img src="testresults-1/baseline-1/results_118.png" width="1000px"/> 
 
 
 
 
-## Prerequisites
-- tensorflow r1.1
-- numpy 1.11.0
-- scipy 0.17.0
-- pillow 3.3.0
+
+## Main Prerequisites
+- pytorch
+- OpenCV
+- Hiwi(FH Kiel Internal package)
+- Numpy
+- Scipy-images
+
 
 ## Getting Started
 ### Installation
