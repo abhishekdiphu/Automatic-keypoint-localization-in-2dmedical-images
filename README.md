@@ -87,5 +87,5 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test 
 
 
 ## Reference
-- The torch implementation of CycleGAN, https://github.com/junyanz/CycleGAN
-- The tensorflow implementation of pix2pix, https://github.com/yenchenlin/pix2pix-tensorflow
+- The pytorch implementation of stacked-hour-glass, https://github.com/princeton-vl/pytorch_stacked_hourglass
+
