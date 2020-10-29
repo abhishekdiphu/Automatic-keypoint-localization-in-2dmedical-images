@@ -89,5 +89,5 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test 
 ## Reference
 - The pytorch implementation of stacked-hour-glass, https://github.com/princeton-vl/pytorch_stacked_hourglass
 - The pytorch implementation of self-adversarial pose estimation, https://github.com/roytseng-tw/adversarial-pose-pytorch
-- The torch implementation of self-adversarial pose estimationh , ttps://github.com/dongzhuoyao/jessiechouuu-adversarial-pose
+- The torch implementation of self-adversarial pose estimationh , https://github.com/dongzhuoyao/jessiechouuu-adversarial-pose
 
