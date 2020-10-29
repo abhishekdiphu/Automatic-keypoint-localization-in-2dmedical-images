@@ -19,6 +19,7 @@ The results of this implementation:
 
 ### Adversarial PoseNet:
 <img src="testresults-1/Adversarial-1/results_116.png" width="500px"/>
+<img src="readmeimages/predictions.png" width="500px"/>
 
 
 
