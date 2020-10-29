@@ -75,6 +75,13 @@ python trainmodeladversarial-pos-conf-exp24.py \
 --dataset  'medical' 
 
 ```
+- During training , one can see how the network is learning on batch of input samples by looking inside the folder 
+```
+trainingImages/
+
+```
+input sample<img src="trainingImages/train_img_exp17.png" width="400px"/>ground-truth<img src="trainingImages/train_gt_exp17.png" width="400px"/>predicted localization map<img src="trainingImages/train_output_exp17.png" width="400px"/>
+
 Models are saved to `./trainmodel/` (can be changed in the --modelName).  
 
 To test the model,
