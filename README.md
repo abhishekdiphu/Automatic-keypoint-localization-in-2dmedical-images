@@ -83,7 +83,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test 
 
 - `lower leg datasets`: The dataset includes around 660 2D medical images. They are grayscale in nature. each lower leg radiograph image in the dataset has been labelled with 6 joint co-ordinate, one each for distinct epiphyses parts ( bone extremities ) femur, ankle , knee for both the legs. The size of each of the image is approximately 7300 x 2800 pixels. Here in this resolution, isotopic range is .143mm = 1 px.
 
-<img src="readmeimages/lowerleg_greyscale.png" width="220px"/><img src="readmeimages/lowerleg_annotated.png" width="300px"/>
+<img src="readmeimages/lowerleg_greyscale.png" width="220px"/>     <img src="readmeimages/lowerleg_annotated.png" width="300px"/>
 
 
 ## Reference
