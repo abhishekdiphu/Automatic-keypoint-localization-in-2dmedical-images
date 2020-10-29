@@ -1,5 +1,3 @@
-<br><br><br>
--->
 
 # AdversarialPoseNet-2DMedical
 Investigation of adversarial learning for landmark localization in 2D medical images (lower extrimites)
@@ -20,14 +18,12 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 The results of this implementation:
 
 - Adversarial PoseNet<br>
-<img src="testresults-1/Adversarial-1/results_116.png" width="500px"/> 
-<img src="testresults-1/Adversarial-1/results_117.png" width="500px"/> 
-<img src="testresults-1/Adversarial-1/results_118.png" width="500px"/> 
+<img src="testresults-1/Adversarial-1/results_116.png" width="500px"/> <img src="testresults-1/Adversarial-1/results_117.png" width="500px"/> <img src="testresults-1/Adversarial-1/results_118.png" width="500px"/> 
 
 - Stack-hour-glass Network(supervised setup)<br>
-<img src="testresults-1baseline-1/results_117.png" width="500px"/> 
-<img src="testresults-1baseline-1/results_118.png" width="500px"/> 
-<img src="testresults-1baseline-1/results_119.png" width="500px"/> 
+<img src="testresults-1/baseline-1/results_117.png" width="500px"/> 
+<img src="testresults-1/baseline-1/results_118.png" width="500px"/> 
+<img src="testresults-1/baseline-1/results_119.png" width="500px"/> 
 
 
 
