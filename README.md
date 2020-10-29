@@ -5,20 +5,17 @@
 Investigation of adversarial learning for landmark localization in 2D medical images (lower extrimites)
 
 
-Tensorflow implementation for learning an image-to-image translation **without** input-output pairs.
-The method is proposed by [Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz/) in 
-[Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networkssee](https://arxiv.org/pdf/1703.10593.pdf). 
-For example in paper:
-
-<img src="imgs/teaser.jpg" width="1000px"/>
+Pytorch implementation of chen et al. "Adversarial PoseNet" for landmark localization on medical data.
+The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, Jian Yang](https://scholar.google.com/citations?user=IWZubqUAAAAJ&hl=zh-CN) in 
+[Adversarial PoseNet: A Structure-aware Convolutional Network for Human Pose Estimation](https://arxiv.org/pdf/1705.00389). 
 
 <!--
 ## Applications
 ### Monet Paintings to Photos
 <img src="imgs/painting2photo.jpg" width="1000px"/>
 
-### Collection Style Transfer
-<img src="imgs/photo2painting.jpg" width="1000px"/>
+### Lanmark localization 
+<img src="readimages/inputs01.png" width="1000px"/>
 
 ### Object Transfiguration
 <img src="imgs/objects.jpg" width="1000px"/>
@@ -92,9 +89,12 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset_dir=/path/to/data/ --phase=test 
 ```
 
 ## Datasets
-Download the datasets using the following script:
 
-- `lower leg datasets`: 750 2D X-RAYS of lower legs. 
+
+- `lower leg datasets`: The dataset includes around 660 2D medical images. They are grayscale in nature. each lower leg radiograph image in the dataset has been labelled with 6 joint co-ordinate, one each for distinct epiphyses parts ( bone extremities ) femur, ankle , knee for both the legs. The size of each of the image is approximately 7300 x 2800 pixels. Here in this resolution, isotopic range is .143mm = 1 px.
+
+<img src="readmeimages/lowerleg_greyscale.png" width="1000px"/>
+<img src="readmeimages/lowerleg_greyscale.png" width="1000px"/>
 
 
 ## Reference
