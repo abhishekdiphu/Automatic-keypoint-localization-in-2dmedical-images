@@ -19,7 +19,7 @@ The results of this implementation:
 
 ### Adversarial PoseNet:
 <img src="testresults-1/Adversarial-1/results_116.png" width="500px"/>
-<img src="testresults-1/Adversarial-1/results_117.png" width="500px"/>
+
 
 
 
@@ -28,7 +28,7 @@ The results of this implementation:
 
 ### localization rate of diffent setups on the test split:
 
-<img src="readmeimages/result_hist.png" width="500px"/><img src="readmeimages/result_table.png" width="500px"/>
+<img src="readmeimages/result_hist.png" width="300px"/><img src="readmeimages/result_table.png" width="300px"/>
 
 
 
