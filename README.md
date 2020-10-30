@@ -31,6 +31,16 @@ The results of this implementation:
 
 <img src="readmeimages/result_hist.png" width="400px"/><img src="readmeimages/result_table.png" width="400px"/>
 
+### Metric Used :
+ ```
+-.Euclidian distance (predicted co-ordinates , ground-truth co-ordinates) < 10 mm
+-.Euclidian distance (predicted co-ordinates , ground-truth co-ordinates) < 20 mm
+```
+#### for more information refer: 
+- ["Detection and Localization of Landmarks in the Lower Extremities Using an Automatically Learned 
+Conditional Random Field](https://www.researchgate.net/publication/319634278_Detection_and_Localization_of_Landmarks_in_the_Lower_Extremities_Using_an_Automatically_Learned_Conditional_Random_Field)
+- regarding image spacing refer [simpleitk](https://simpleitk.readthedocs.io/en/v1.2.4/Documentation/docs/source/fundamentalConcepts.html#images)
+
 
 
 
