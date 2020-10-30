@@ -111,7 +111,7 @@ The dataset is not publically available , and has been taken from the authors of
 Conditional Random Field](https://www.researchgate.net/publication/319634278_Detection_and_Localization_of_Landmarks_in_the_Lower_Extremities_Using_an_Automatically_Learned_Conditional_Random_Field)
 
 
-<img src="readmeimages/lowerleg_greyscale.png" width="220px"/><img src="readmeimages/lowerleg.png" width="220px"/>   <img src="readmeimages/lowerleg_annotated.png" width="300px"/>
+<img src="readmeimages/lowerleg.png" width="220px"/>   <img src="readmeimages/lowerleg_annotated.png" width="300px"/>
 
 
 ## Reference
