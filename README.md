@@ -10,7 +10,10 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
-<img src="readmeimages/inputs01.png" width="500px"/>
+<img src="readmeimages/inputs01.png" width="200px"/>
+<img src="readmeimages/download1.png" width="200px"/>
+<img src="readmeimages/download2.png" width="200px"/>
+<img src="readmeimages/download3.png" width="200px"/>
 
 
 
