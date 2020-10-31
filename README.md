@@ -27,7 +27,7 @@ The results of this implementation:
 ### Stack-hour-glass Network(supervised setup):
 <img src="testresults-1/baseline-1/results_120.png" width="500px"/> 
 
-### localization rate of diffent setups on the test split:
+### localization rate of  on the test set:
 
 <img src="readmeimages/result_hist.png" width="400px"/>
 
