@@ -28,9 +28,12 @@ The results of this implementation:
 ### Stack-hour-glass Network(supervised setup):
 <img src="testresults-1/baseline-1/results_120.png" width="500px"/> 
 
-### localization rate of  on the test set:
+### localization rate(percentage of correct keypoints) within 10 mm  on the test set:
 
 <img src="readmeimages/result_hist.png" width="400px"/>
+'''
+ please note : localization rate(percentage of correct keypoints) within 20 mm was on average 98% accross all six landmarks. 
+'''
 
 ### Metric Used :
  ```
