@@ -31,9 +31,9 @@ The results of this implementation:
 ### localization rate(percentage of correct keypoints) within 10 mm  on the test set:
 
 <img src="readmeimages/result_hist.png" width="400px"/>
-'''
+```
  please note : localization rate(percentage of correct keypoints) within 20 mm was on average 98% accross all six landmarks. 
-'''
+```
 
 ### Metric Used :
  ```
