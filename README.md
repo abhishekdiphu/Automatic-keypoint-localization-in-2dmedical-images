@@ -91,8 +91,10 @@ python trainmodeladversarial-pos-conf-exp24.py \
 ```
 - During training , one can see how the network is learning on batch of input samples by looking inside the folder 
 ```
-trainingImages/
+trainingImages/  and can also visualize the area of interest , while localizing the keypoints on the images , by ussing the localization maps of the last convolutional layers as shown below:
 ```
+ <img src="readmeimages/superim.png" width="300px"/>
+
 
 Models are saved to `./trainmodel/` (can be changed in the --modelName).  
 
