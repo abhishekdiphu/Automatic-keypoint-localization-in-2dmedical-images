@@ -15,6 +15,11 @@ established generative adversarial network architecture is being presented which
 heatmaps. The effectiveness of the network is trained and tested on the X-ray medical
 images of lower extremities and evaluated in terms of localization accuracy (within 10 mm
 tolerance).
+   Occlusions in medical images happens due to certain causes such as putting
+prosthetics on the bone joints or restricted view, making it harder for landmark localization.
+However, under this conditions, human vison can predict near accurate poses by
+exploiting geometric orientation of joint inter-connectivity between bones in the medical
+images.
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
 <img src="readmeimages/inputs01.png" width="200px"/><img src="readmeimages/download1.png" width="200px"/>
