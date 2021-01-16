@@ -40,6 +40,12 @@ values in c-fake is either 0 or 1. 0 if predicted key-point is incorrectly local
 accurately localized by the generator. 
 
 ### Generator training : 
+
+#### Task 1:
+- MSE = Mean Sq error loss (yhat , y). yhat are predicted heatmaps , y are ground-truth heatmaps.
+
+
+#### Task 2:
 - 𝐿𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥), 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)] ,
 𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 , P is Pose distriminator.
 𝐺(𝑥) , 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑 ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠, 𝑥 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑖𝑛𝑝𝑢𝑡 𝑖𝑚𝑎𝑔𝑒.
@@ -49,6 +55,9 @@ Generator also tries to minimize the 2nd term 𝑙𝑜𝑔(1 − 𝐶(P(G(x),�
 𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 , P is Pose distriminator.
 𝐺(𝑥) , 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑 ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠, 𝑥 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑖𝑛𝑝𝑢𝑡 𝑖𝑚𝑎𝑔𝑒.
 Generator also tries to minimize the 2nd term 𝑙𝑜𝑔(1 − 𝐶(𝐺(𝑥) ) − 𝑐_𝑓𝑎𝑘𝑒) 
+
+ *Total Generator loss = MSE + beta*𝐿𝑝(𝐺, 𝑃) + alpha*𝐿𝑝(𝐺, C)
+ alpha , beta are scaling terms.
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
 <img src="readmeimages/inputs01.png" width="200px"/><img src="readmeimages/download1.png" width="200px"/>
