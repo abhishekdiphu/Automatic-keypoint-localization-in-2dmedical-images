@@ -20,6 +20,10 @@ prosthetics on the bone joints or restricted view, making it harder for landmark
 However, under this conditions, human vison can predict near accurate poses by
 exploiting geometric orientation of joint inter-connectivity between bones in the medical
 images.
+## Adversarial training :
+𝐿𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥), 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)] − − − − − − − −(𝑖) ,
+𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 ,
+𝐺(𝑥) , 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑 ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠, 𝑥 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑖𝑛𝑝𝑢𝑡 𝑖𝑚𝑎𝑔𝑒�
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
 <img src="readmeimages/inputs01.png" width="200px"/><img src="readmeimages/download1.png" width="200px"/>
