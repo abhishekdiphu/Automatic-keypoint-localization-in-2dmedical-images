@@ -39,7 +39,7 @@ should be high when it is close to ground truth and low otherwise. The output ra
 values in c-fake is either 0 or 1. 0 if predicted key-point is incorrectly localized, 1 if
 accurately localized by the generator. 
 
-### Generator training : 
+### Generator training (multi-tasking) : 
 
 #### Task 1:
 - MSE = Mean Sq error loss (yhat , y). yhat are predicted heatmaps , y are ground-truth heatmaps.
