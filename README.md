@@ -22,8 +22,8 @@ exploiting geometric orientation of joint inter-connectivity between bones in th
 images.
 ## Adversarial training :
 ### Pose Discriminator training :
-- 𝑙oss𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔 𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥) , 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)].
-
+- 𝑙oss𝑝(𝐺, 𝑃) =  𝐸[𝑙𝑜𝑔 𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥) , 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)].
+- maximize all the terms above 
 where p-real are ground-truth of the real heatmaps. All of them are labelled as 1.
 whereas P-fake is the label for the generated (fake) heatmaps, and the size of the pfake is [1x6],
 where the value of p-fake is either ’0’, ‘1’. 0 if predicted key-point is
@@ -31,7 +31,7 @@ incorrectly localized, 1 if accurately localized.
 
 ### Confidnece Discriminator training :
 - 𝑙𝑐(𝐺, 𝐶) = 𝐸[𝑙𝑜𝑔 𝐶(𝑦)] + 𝐸[𝑙𝑜𝑔(1 − 𝐶(𝐺(𝑥)) − 𝑐_𝑓𝑎𝑘𝑒)]
-
+-  maximize all the terms above
 Where c-fake is the ground truth confidence label for fake heatmaps. During training
 the confidence network, the real heatmaps are labelled with a 1 x 6 (6 is the number
 of body parts) unit vector c_real. The confidence of the fake (predicted) heatmap
@@ -46,17 +46,17 @@ accurately localized by the generator.
 
 
 #### Task 2:
-- 𝐿𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥), 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)] ,
+- 𝐿oss𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥), 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)] ,
 𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 , P is Pose distriminator.
 𝐺(𝑥) , 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑 ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠, 𝑥 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑖𝑛𝑝𝑢𝑡 𝑖𝑚𝑎𝑔𝑒.
 Generator also tries to minimize the 2nd term 𝑙𝑜𝑔(1 − 𝐶(P(G(x),𝑥) ) − p_𝑓𝑎𝑘𝑒)
 
-- 𝐿𝑝(𝐺, C) = 𝐸[𝑙𝑜𝑔C(𝑦)] + 𝐸[𝑙𝑜𝑔(1 − C(𝐺(𝑥)) − c_𝑓𝑎𝑘𝑒)] ,
+- 𝐿oss𝑝(𝐺, C) = 𝐸[𝑙𝑜𝑔C(𝑦)] + 𝐸[𝑙𝑜𝑔(1 − C(𝐺(𝑥)) − c_𝑓𝑎𝑘𝑒)] ,
 𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 , P is Pose distriminator.
 𝐺(𝑥) , 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑒𝑑 ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠, 𝑥 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑖𝑛𝑝𝑢𝑡 𝑖𝑚𝑎𝑔𝑒.
 Generator also tries to minimize the 2nd term 𝑙𝑜𝑔(1 − 𝐶(𝐺(𝑥) ) − 𝑐_𝑓𝑎𝑘𝑒) 
 
- *Total Generator loss = MSE + beta*𝐿𝑝(𝐺, 𝑃) + alpha*𝐿𝑝(𝐺, C)
+ - Total Generator loss = MSE + beta*𝐿oss𝑝(𝐺, 𝑃) + alpha*𝐿oss𝑝(𝐺, C)
  alpha , beta are scaling terms.
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
