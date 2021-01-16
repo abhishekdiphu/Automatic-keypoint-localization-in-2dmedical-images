@@ -21,6 +21,24 @@ However, under this conditions, human vison can predict near accurate poses by
 exploiting geometric orientation of joint inter-connectivity between bones in the medical
 images.
 ## Adversarial training :
+### Pose Discriminator training :
+- 𝑙oss𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔 𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥) , 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)].
+
+where p-real are ground-truth of the real heatmaps. All of them are labelled as 1.
+whereas P-fake is the label for the generated (fake) heatmaps, and the size of the pfake is [1x6],
+where the value of p-fake is either ’0’, ‘1’. 0 if predicted key-point is
+incorrectly localized, 1 if accurately localized.
+
+### Confidnece Discriminator training :
+- 𝑙𝑐(𝐺, 𝐶) = 𝐸[𝑙𝑜𝑔 𝐶(𝑦)] + 𝐸[𝑙𝑜𝑔(1 − 𝐶(𝐺(𝑥)) − 𝑐_𝑓𝑎𝑘𝑒)]
+
+Where c-fake is the ground truth confidence label for fake heatmaps. During training
+the confidence network, the real heatmaps are labelled with a 1 x 6 (6 is the number
+of body parts) unit vector c_real. The confidence of the fake (predicted) heatmap
+should be high when it is close to ground truth and low otherwise. The output range of
+values in c-fake is either 0 or 1. 0 if predicted key-point is incorrectly localized, 1 if
+accurately localized by the generator. 
+
 ### Generator training : 
 - 𝐿𝑝(𝐺, 𝑃) = 𝐸[𝑙𝑜𝑔𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − 𝑃(𝐺(𝑥), 𝑥) − 𝑝_𝑓𝑎𝑘𝑒)] ,
 𝑤ℎ𝑒𝑟𝑒 𝑦 𝑎𝑟𝑒 𝑡ℎ𝑒 𝑔𝑟𝑜𝑢𝑛𝑑𝑡𝑟𝑢𝑡ℎ ℎ𝑒𝑎𝑡𝑚𝑎𝑝𝑠 , P is Pose distriminator.
