@@ -7,7 +7,14 @@ Pytorch implementation of chen et al. "Adversarial PoseNet" for landmark localiz
 The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, Jian Yang](https://scholar.google.com/citations?user=IWZubqUAAAAJ&hl=zh-CN) in 
 [Adversarial PoseNet: A Structure-aware Convolutional Network for Human Pose Estimation](https://arxiv.org/pdf/1705.00389). 
 
-
+## Goal
+The goal of this work will be to investigate the role of adversarial learning for keypoint localization of 6 landmarks in lower extremities taken from dataset of 660 X-ray
+images by incorporating priors about the structure of the lower extremities pose
+components implicitly during the training of a network. For this analysis, an already
+established generative adversarial network architecture is being presented which predicts
+heatmaps. The effectiveness of the network is trained and tested on the X-ray medical
+images of lower extremities and evaluated in terms of localization accuracy (within 10 mm
+tolerance).
 
 ## Sample input images (left) & its corresponding ground truth heatmap(right): 
 <img src="readmeimages/inputs01.png" width="200px"/><img src="readmeimages/download1.png" width="200px"/>
