@@ -24,7 +24,8 @@ images.
 
 ## Model Architecture:
 ### 1. generator architecture :
-### <img src="readmeimages/download1.png" width="200px"/>
+ <img src="readmeimages/stack_hr_gls.png" width="200px"/>
+ <img src="readmeimages/stack_hr_gls_1.png" width="200px"/>
 
 
 ## Network training :
