@@ -8,7 +8,8 @@ The method was  proposed by [Yu Chen, Chunhua Shen, Xiu-Shen Wei, Lingqiao Liu, 
 [Adversarial PoseNet: A Structure-aware Convolutional Network for Human Pose Estimation](https://arxiv.org/pdf/1705.00389). 
 
 ## Goal
-The goal of this work will be to investigate the role of adversarial learning for keypoint localization of 6 landmarks in lower extremities taken from dataset of 660 X-ray
+The goal of this work will be to investigate the role of adversarial learning for keypoint localization 
+of 6 landmarks in lower extremities taken from dataset of 660 X-ray
 images by incorporating priors about the structure of the lower extremities pose
 components implicitly during the training of a network. For this analysis, an already
 established generative adversarial network architecture is being presented which predicts
@@ -20,7 +21,15 @@ prosthetics on the bone joints or restricted view, making it harder for landmark
 However, under this conditions, human vison can predict near accurate poses by
 exploiting geometric orientation of joint inter-connectivity between bones in the medical
 images.
-## Adversarial training :
+
+## Model Architecture:
+### 1. generator architecture :
+### <img src="readmeimages/download1.png" width="200px"/>
+
+
+## Network training :
+
+### Adversarial training :
 ### Pose Discriminator training :
 - 𝑙oss𝑝(𝐺, 𝑃) =  𝐸[𝑙𝑜𝑔 𝑃(𝑦, 𝑥)] + 𝐸[𝑙𝑜𝑔(1 − |𝑃(𝐺(𝑥) , 𝑥) − 𝑝_𝑓𝑎𝑘𝑒|)].
 
