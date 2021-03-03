@@ -126,8 +126,8 @@ Conditional Random Field](https://www.researchgate.net/publication/319634278_Det
 - Install Pytorch from https://pytorch.org/get-started/locally/
 - Clone this repo:
 ```bash
-git clone https://github.com/abhishekdiphu/AdversarialPoseNet-2DMedical.git
-cd AdversarialPoseNet-2DMedical
+git clone https://github.com/abhishekdiphu/Automatic-keypoint-localization-in-2dmedical-images.git
+cd Automatic-keypoint-localization-in-2dmedical-images
 ```
 
 
